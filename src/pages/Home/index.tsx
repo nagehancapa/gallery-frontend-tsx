@@ -10,26 +10,24 @@ import { Artwork } from "../../store/artworkDetails/types";
 
 export default function HomePage() {
   const dispatch = useDispatch();
-  const artworkState: ArtworksState = useSelector(selectArtworks);
+  const artworkCollection: ArtworksState = useSelector(selectArtworks);
 
   useEffect(() => {
     console.log("homepage useeffect");
-    if (!artworkState.artworks.length) {
-      console.log("homepage if", artworkState.artworks.length);
+    if (!artworkCollection.length) {
+      console.log("homepage if", artworkCollection.length);
       dispatch(fetchArtworks());
     }
-  }, [dispatch, artworkState.artworks]);
+  }, [dispatch, artworkCollection.length]);
 
-  console.log("type of artworkState", typeof artworkState);
-  console.log("artworkState[0]", artworkState[0]);
+  console.log("artworkCollection", artworkCollection);
 
   return (
     <Container>
       <Jumbotron>
         <h1>Artworks</h1>
       </Jumbotron>
-
-      {artworkState.artworks.map((artwork: Artwork) => {
+      {artworkCollection.map((artwork: Artwork) => {
         return (
           <ArtworkCard
             key={artwork.id}
