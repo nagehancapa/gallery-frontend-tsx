@@ -11,9 +11,7 @@ const fetchArtworksSuccess = (artworks: ArtworksState): ArtworksAction => ({
 export const fetchArtworks = (): AppThunk => {
   return async (dispatch, getState) => {
     try {
-      console.log("inside artwork actions fetch artworks");
       const response = await axios.get(`${apiUrl}/artworks`);
-      console.log("response", response);
       dispatch(fetchArtworksSuccess(response.data.artworks));
     } catch (error) {
       console.log((error as Error).message);

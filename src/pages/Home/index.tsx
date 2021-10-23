@@ -13,14 +13,10 @@ export default function HomePage() {
   const artworkCollection: ArtworksState = useSelector(selectArtworks);
 
   useEffect(() => {
-    console.log("homepage useeffect");
     if (!artworkCollection.length) {
-      console.log("homepage if", artworkCollection.length);
       dispatch(fetchArtworks());
     }
   }, [dispatch, artworkCollection.length]);
-
-  console.log("artworkCollection", artworkCollection);
 
   return (
     <Container>
