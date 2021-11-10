@@ -1,0 +1,38 @@
+.ArtworkList {
+  .Artworks {
+    margin: 0 -0.5rem;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .Artwork {
+    min-height: 12rem;
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin: 0.5rem;
+    padding: 0;
+
+    .Overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 0.5rem;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width: 740px) {
+    .Artworks {
+      flex-direction: row;
+    }
+
+    .Artwork {
+      max-width: 20rem;
+    }
+  }
+}

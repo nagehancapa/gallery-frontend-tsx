@@ -8,6 +8,8 @@ import ArtworkCard from "../../components/ArtworkCard";
 import { ArtworksState } from "../../store/artworks/types";
 import { Artwork } from "../../store/artworkDetails/types";
 
+import "./home.scss";
+
 export default function HomePage() {
   const dispatch = useDispatch();
   const artworkCollection: ArtworksState = useSelector(selectArtworks);
@@ -19,22 +21,26 @@ export default function HomePage() {
   }, [dispatch, artworkCollection.length]);
 
   return (
-    <Container>
+    <Container className="ArtworkList">
       <Jumbotron>
         <h1>Artworks</h1>
       </Jumbotron>
-      {artworkCollection.map((artwork: Artwork) => {
-        return (
-          <ArtworkCard
-            key={artwork.id}
-            id={artwork.id}
-            imageUrl={artwork.imageUrl}
-            title={artwork.title}
-            hearts={artwork.hearts}
-            numberOfBids={artwork.bids!.length}
-          />
-        );
-      })}
+      <ul className="Artworks">
+        {artworkCollection.map((artwork: Artwork) => {
+          return (
+            <li className="Artwork">
+              <ArtworkCard
+                key={artwork.id}
+                id={artwork.id}
+                imageUrl={artwork.imageUrl}
+                title={artwork.title}
+                hearts={artwork.hearts}
+                numberOfBids={artwork.bids!.length}
+              />
+            </li>
+          );
+        })}
+      </ul>
     </Container>
   );
 }

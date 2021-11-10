@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -12,10 +11,8 @@ export default function ArtworkCard(props: Artwork) {
   return (
     <>
       <Card border="col">
-        <Col className="mt-4" md={{ span: 8, offset: 2 }}>
-          <Image src={props.imageUrl} alt="preview" thumbnail />
-        </Col>
-        <h1>{props.title}</h1>
+        <Card.Img src={props.imageUrl} alt="Card image" />
+        <strong>{props.title}</strong>
         <Link to={`/artworks/${props.id}`}>
           <Button>See details</Button>
         </Link>

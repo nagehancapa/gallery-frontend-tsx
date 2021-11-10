@@ -13,6 +13,7 @@ export const fetchArtworks = (): AppThunk => {
     try {
       const response = await axios.get(`${apiUrl}/artworks`);
       dispatch(fetchArtworksSuccess(response.data.artworks));
+      console.log("response", response);
     } catch (error) {
       console.log((error as Error).message);
     }
