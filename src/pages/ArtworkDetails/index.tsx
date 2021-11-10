@@ -8,7 +8,6 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 import {
   fetchArtworkById,
   updateNumberOfHearts,
@@ -16,6 +15,8 @@ import {
 import { selectArtworkDetails } from "../../store/artworkDetails/selectors";
 import { Artwork } from "../../store/artworkDetails/types";
 import NewBidForm from "../../components/NewBidForm";
+
+import "./details.scss";
 
 export default function ArtworkDetails() {
   interface ParamTypes {
@@ -37,7 +38,11 @@ export default function ArtworkDetails() {
 
       <Row>
         <Card>
-          <Image src={artworkDetails.imageUrl} alt="preview" thumbnail />
+          <Card.Img
+            src={artworkDetails.imageUrl}
+            alt="Card image"
+            className="Image"
+          />
           <Container>
             <Row>
               <Col>
