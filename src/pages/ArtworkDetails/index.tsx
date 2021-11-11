@@ -36,7 +36,7 @@ export default function ArtworkDetails() {
         <h1>{artworkDetails.title}</h1>
       </Jumbotron>
 
-      <Row>
+      <Col>
         <Card>
           <Card.Img
             src={artworkDetails.imageUrl}
@@ -98,7 +98,7 @@ export default function ArtworkDetails() {
             />
           </Card>
         </Col>
-      </Row>
+      </Col>
     </Container>
   );
 }
