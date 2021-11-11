@@ -28,7 +28,7 @@ export default function HomePage() {
       <ul className="Artworks">
         {artworkCollection.map((artwork: Artwork) => {
           return (
-            <li className="Artwork">
+            <li className="Artwork" key={artwork.id}>
               <ArtworkCard
                 key={artwork.id}
                 id={artwork.id}
