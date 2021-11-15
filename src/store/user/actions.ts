@@ -69,11 +69,13 @@ export const login = (email: string, password: string): AppThunk => {
   return async (dispatch, getState) => {
     dispatch(appLoading());
     try {
+      console.log("Login Front End: Before getting Data");
       const response = await axios.post(`${apiUrl}/login`, {
         email,
         password,
       });
 
+      console.log("Login Front End: After getting Data");
       dispatch(loginSuccess(response.data));
       dispatch(showMessageWithTimeout("success", false, "welcome back!", 1500));
       dispatch(appDoneLoading());
