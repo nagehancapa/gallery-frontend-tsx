@@ -24,9 +24,9 @@ const loginSuccess = (userWithToken: UserWithToken): UserAction => {
   };
 };
 
-const tokenStillValid = (userWithoutToken: UserWithoutToken): UserAction => ({
+const tokenStillValid = (userWithToken: UserWithToken): UserAction => ({
   type: TOKEN_STILL_VALID,
-  payload: userWithoutToken,
+  payload: userWithToken,
 });
 
 export const logOut = (): UserAction => ({ type: LOG_OUT });
