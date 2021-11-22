@@ -9,7 +9,6 @@ import {
 } from "../appState/actions";
 import {
   UserWithToken,
-  UserWithoutToken,
   UserAction,
   LOGIN_SUCCESS,
   TOKEN_STILL_VALID,

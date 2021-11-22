@@ -54,7 +54,7 @@ export default function NewBidForm(props: { bids: Bid[]; minimumBid: number }) {
                   value={newBid}
                   onChange={(event) => setNewBid(parseInt(event.target.value))}
                   type="number"
-                  placeholder={minBid.toString()}
+                  placeholder={"" + minBid}
                   required
                 />
               </Form.Group>
