@@ -46,7 +46,7 @@ export const signUp = (
         password,
         isArtist,
       });
-
+      console.log("response from signup frontend", response);
       dispatch(loginSuccess(response.data));
       dispatch(
         showMessageWithTimeout("success", true, "account created", 3000)
