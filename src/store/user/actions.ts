@@ -9,6 +9,7 @@ import {
 } from "../appState/actions";
 import {
   UserWithToken,
+  UserWithoutToken,
   UserAction,
   LOGIN_SUCCESS,
   TOKEN_STILL_VALID,
@@ -23,9 +24,9 @@ const loginSuccess = (userWithToken: UserWithToken): UserAction => {
   };
 };
 
-const tokenStillValid = (userWithToken: UserWithToken): UserAction => ({
+const tokenStillValid = (userWithoutToken: UserWithoutToken): UserAction => ({
   type: TOKEN_STILL_VALID,
-  payload: userWithToken,
+  payload: userWithoutToken,
 });
 
 export const logOut = (): UserAction => ({ type: LOG_OUT });
@@ -106,6 +107,8 @@ export const getUserWithStoredToken = (): AppThunk => {
       const response = await axios.get(`${apiUrl}/me`, {
         headers: { Authorization: `Bearer ${token}` },
       });
+
+      console.log("get user with stored token response", response);
 
       // token is still valid
       dispatch(tokenStillValid(response.data));
