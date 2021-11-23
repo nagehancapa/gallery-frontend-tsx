@@ -4,6 +4,7 @@ import { logOut } from "../../store/user/actions";
 import Button from "react-bootstrap/Button";
 import { selectUser, selectArtist } from "../../store/user/selectors";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
 export default function LoggedIn() {
   const dispatch = useDispatch();
@@ -13,7 +14,9 @@ export default function LoggedIn() {
   console.log("Navigation LoggedIn");
 
   const loginLogoutControls = isArtist && (
-    <Nav.Link href="/startAuction">Start an auction</Nav.Link>
+    <Nav.Link as={Link} to="/startAuction">
+      Start an auction
+    </Nav.Link>
   );
 
   return (
