@@ -46,7 +46,6 @@ export const signUp = (
         password,
         isArtist,
       });
-      console.log("response from signup frontend", response);
       dispatch(loginSuccess(response.data));
       dispatch(
         showMessageWithTimeout("success", true, "account created", 3000)
@@ -69,13 +68,11 @@ export const login = (email: string, password: string): AppThunk => {
   return async (dispatch, getState) => {
     dispatch(appLoading());
     try {
-      console.log("Login Front End: Before getting Data");
       const response = await axios.post(`${apiUrl}/login`, {
         email,
         password,
       });
 
-      console.log("Login Front End: After getting Data");
       dispatch(loginSuccess(response.data));
       dispatch(showMessageWithTimeout("success", false, "welcome back!", 1500));
       dispatch(appDoneLoading());
@@ -107,8 +104,6 @@ export const getUserWithStoredToken = (): AppThunk => {
       const response = await axios.get(`${apiUrl}/me`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-
-      console.log("get user with stored token response", response);
 
       // token is still valid
       dispatch(tokenStillValid(response.data));
