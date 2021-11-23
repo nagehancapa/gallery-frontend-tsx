@@ -13,6 +13,8 @@ export default function Navigation() {
 
   const loginLogoutControls = token ? <LoggedIn /> : <LoggedOut />;
 
+  console.log("Navigation controls", loginLogoutControls);
+
   return (
     <Navbar bg="light" expand="lg">
       <Navbar.Brand as={NavLink} to="/">

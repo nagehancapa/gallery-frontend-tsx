@@ -10,6 +10,8 @@ export default function LoggedIn() {
   const user = useSelector(selectUser);
   const isArtist = useSelector(selectArtist);
 
+  console.log("Navigation LoggedIn");
+
   const loginLogoutControls = isArtist && (
     <Nav.Link href="/startAuction">Start an auction</Nav.Link>
   );
