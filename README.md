@@ -1,8 +1,22 @@
-# Gallery
+## Artwork Gallery
 
-Gallery is an art gallery webapp. Users can put up their artworks for auction and like the artworks. It has multiple pages. Home page with a list of artworks, a detail page for artworks where you can see the bids or like the artwork, a signup/login page and a form where you can make an auction.
+### What is this app about?
 
-# Getting Started with Create React App
+Artwork gallery is a web app. Users can put up their artworks for auction and encourage other people to make more art by giving hearts to their artworks. It has multiple pages:
+
+- a home page with a list of artworks,
+- a detail page for artworks where you can see the bids or give heart to the artwork
+- a signup/login page and
+- a form where you can make an auction.
+
+Check out the website [here](https://artwork-gallery.netlify.app/)
+
+If you'd like to play around with the app, you can sign up or login with:
+
+- email: artist@a.com
+- password: a
+
+### App demo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
