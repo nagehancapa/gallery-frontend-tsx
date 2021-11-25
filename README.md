@@ -18,7 +18,7 @@ If you'd like to play around with the app, you can sign up or login with:
 
 ### App demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![App demo](https://github.com/nagehancapa/gallery-frontend-tsx/tree/master/readme/art-gallery.gif)
 
 ## Available Scripts
 
