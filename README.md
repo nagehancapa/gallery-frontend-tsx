@@ -18,7 +18,7 @@ If you'd like to play around with the app, you can sign up or login with:
 
 ### App demo
 
-![App demo](https://github.com/nagehancapa/gallery-frontend-tsx/tree/master/readme/art-gallery.gif)
+![App demo](https://github.com/nagehancapa/gallery-frontend-tsx/blob/master/demo/art-gallery.gif)
 
 ## Available Scripts
 
