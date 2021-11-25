@@ -2,12 +2,7 @@
 
 ### What is this app about?
 
-Artwork gallery is a web app. Users can put up their artworks for auction and encourage other people to make more art by giving hearts to their artworks. It has multiple pages:
-
-- a home page with a list of artworks,
-- a detail page for artworks where you can see the bids or give heart to the artwork
-- a signup/login page and
-- a form where you can make an auction.
+Artwork gallery is a web app. Users can put up their artworks for auction and encourage other people to make more art by giving hearts to their artworks.
 
 Check out the website [here](https://artwork-gallery.netlify.app/)
 
@@ -20,69 +15,55 @@ If you'd like to play around with the app, you can sign up or login with:
 
 ![App demo](https://github.com/nagehancapa/gallery-frontend-tsx/blob/master/demo/art-gallery.gif)
 
-## Available Scripts
+### Pages overview:
 
-In the project directory, you can run:
+- a home page with a list of artworks,
+- a detail page for artworks where you can see the bids or give heart to the artwork
+- a signup/login page and
+- a form where you can make an auction.
 
-### `npm run start`
+### User stories
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- As a user I can see a list of artworks when I open the homepage. I can also see the artworks' title, image the number of hearts it has and the number of bids it has. I can click a button to link the details of an artwork.
+- As a user I can see the bids belonging to that artwork in the artwork's details page so that I know what it costs.
+- As a user I can give hearts for the artwork in the artwork's details page.
+- As a user I can make a bid when I logged in in the artwork's details page. My bid cab be seen with my email.
+- As a user I can spesify if I am an artist when I sign up.
+- As an artist I can be able to post an artwork in the start auction page.
+- As a user I can see the the start an auction tab in the navbar only if I am an artist.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Goals for this project
 
-### `npm run test`
+- demonstrate the main skills I've learned so far about the frontend development.
+- build a full-stack web app from a first idea into a working version.
+- practice planning with user-stories, wireframes, datamodels and git version control
+- extend my knowledge with facing the problems when deploying a working app.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Used technologies
 
-### `npm run build`
+#### Frontend
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Redux
+- TypeScript
+- Axios
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js
+- Express REST API
+- JWT & Bcrypt Authentication
+- PostgreSQL database
+- Sequelize ORM
 
-### `npm run eject`
+### Wireframe
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Click [here](---) to see the wireframe.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Database diagram
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Click [here](---) to see the database diagram.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Backend repo
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Click [here](https://github.com/nagehancapa/gallery-server) to see the backend repository.
