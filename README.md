@@ -13,7 +13,7 @@ If you'd like to play around with the app, you can sign up or login with:
 
 ### App demo
 
-![App demo](https://github.com/nagehancapa/gallery-frontend-tsx/blob/master/demo/art-gallery.gif)
+![App demo](https://github.com/nagehancapa/gallery-frontend-tsx/blob/master/ReadMeFiles/art-gallery.gif)
 
 ### Pages overview:
 
@@ -56,11 +56,14 @@ If you'd like to play around with the app, you can sign up or login with:
 - PostgreSQL database
 - Sequelize ORM
 
-### Wireframe
+### Wireframe (figma)
 
-Click [here](---) to see the wireframe.
+Click [here](https://github.com/nagehancapa/gallery-frontend-tsx/blob/master/ReadMeFiles/art-gallery-wireframe.png) to see the wireframe.
 
-### Database diagram
+### Database diagram (dbdiagram.io)
+
+https://dbdiagram.io/d/5fbbc5eb3a78976d7b7d10ac
+https://dbdiagram.io/d/5fbcecde3a78976d7b7d3344
 
 Click [here](---) to see the database diagram.
 
