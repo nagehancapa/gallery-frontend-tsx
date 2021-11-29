@@ -58,7 +58,7 @@ If you'd like to play around with the app, you can sign up or login with:
 
 ### Wireframe (figma)
 
-Click [here](https://github.com/nagehancapa/gallery-frontend-tsx/blob/master/ReadMeFiles/art-gallery-wireframe.png) to see the wireframe.
+Click [here](https://www.figma.com/file/x9WNbakVkojnWufzUTBtSU/Art-Gallery-Wireframe?node-id=0%3A1) to see the wireframe.
 
 ### Database diagram (dbdiagram.io)
 
