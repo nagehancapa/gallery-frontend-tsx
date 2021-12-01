@@ -56,11 +56,11 @@ If you'd like to play around with the app, you can sign up or login with:
 - PostgreSQL database
 - Sequelize ORM
 
-### Wireframe (figma)
+### Wireframe
 
 Click [here](https://www.figma.com/file/x9WNbakVkojnWufzUTBtSU/Art-Gallery-Wireframe?node-id=0%3A1) to see the wireframe.
 
-### Database diagram (dbdiagram.io)
+### Database diagram
 
 Click [here](https://dbdiagram.io/d/61a5fb068c901501c0d91a51) to see the database diagram.
 
