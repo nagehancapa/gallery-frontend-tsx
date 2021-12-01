@@ -62,10 +62,7 @@ Click [here](https://www.figma.com/file/x9WNbakVkojnWufzUTBtSU/Art-Gallery-Wiref
 
 ### Database diagram (dbdiagram.io)
 
-https://dbdiagram.io/d/5fbbc5eb3a78976d7b7d10ac
-https://dbdiagram.io/d/5fbcecde3a78976d7b7d3344
-
-Click [here](---) to see the database diagram.
+Click [here](https://dbdiagram.io/d/61a5fb068c901501c0d91a51) to see the database diagram.
 
 ### Backend repo
 
